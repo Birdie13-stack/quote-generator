@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;}
+
+.main{
+    background-color: rgb(143, 87, 255);
+    width: 40%;
+    text-align: center;
+    /* text-align: left; */
+    border-radius: 20px;
+    color: white;
+    /* margin: 20px auto; */
+    padding: 10px 5px;
+    margin: 20px 0;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+button{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: rgb(143, 87, 255);
+}
+
+.author{
+    margin: 5px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 227, 87);
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .main{
+        width: 80%;
+    }
+}
