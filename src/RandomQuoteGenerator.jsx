@@ -41,11 +41,12 @@ function RandomQuoteGenerator() {
   return (
    <div>
       <h1>Quote Generator</h1>
+      <p>Click the button to fetch a random quote</p>
 
       <div className="main">
       {loading && <p>Loading...</p>}
       {error && <p className="error">{error}</p>}
-      {quote ? (
+      {quote && (
         <>
         <div>
           
@@ -54,7 +55,7 @@ function RandomQuoteGenerator() {
         </div>
 
         </>
-      ): <p>Click the button to fetch a random quote</p>}
+      )}
               <button onClick={fetchQuote}>Generate Quote</button>
 
       </div>
